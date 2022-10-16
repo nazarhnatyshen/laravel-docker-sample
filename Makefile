@@ -38,3 +38,8 @@ docker_build:
 .PHONY: db_migrate
 db_migrate:
 	$(IN_APP) $(artisan) migrate
+
+.PHONY: bash
+bash:
+	$(IN_APP) bash
+
